@@ -17,14 +17,14 @@ try:
         motors.motor1.setSpeed(s)
         time.sleep(0.005)
 
-    print("Motor 1 reverse")
-    for s in test_reverse_speeds:
-        motors.motor1.setSpeed(s)
-        time.sleep(0.005)
-
     print("Motor 2 forward")
     for s in test_forward_speeds:
         motors.motor2.setSpeed(s)
+        time.sleep(0.005)
+
+    print("Motor 1 reverse")
+    for s in test_reverse_speeds:
+        motors.motor1.setSpeed(s)
         time.sleep(0.005)
 
     print("Motor 2 reverse")
